@@ -5,7 +5,7 @@ import { MessageRole } from '$lib/enums';
 import type { McpServerOverride } from '$lib/types/database';
 import type { ExportedConversation } from '$lib/types/database';
 
-class LlamaUiDatabase extends Dexie {
+class SmileUiDatabase extends Dexie {
 	[IDXDB_TABLES.conversations]!: EntityTable<DatabaseConversation, string>;
 	[IDXDB_TABLES.messages]!: EntityTable<DatabaseMessage, string>;
 
@@ -16,7 +16,7 @@ class LlamaUiDatabase extends Dexie {
 	}
 }
 
-const db = new LlamaUiDatabase();
+const db = new SmileUiDatabase();
 
 export class DatabaseService {
 	/**

@@ -5,7 +5,7 @@ import type { Component } from 'svelte';
 import { MimeTypeImage } from '$lib/enums/files.enums';
 
 export const DEFAULT_CLIENT_VERSION = '1.0.0';
-export const MCP_CLIENT_NAME = 'llama-ui-mcp';
+export const MCP_CLIENT_NAME = 'smile-ui-mcp';
 export const DEFAULT_IMAGE_MIME_TYPE = MimeTypeImage.PNG;
 
 /** MIME types considered safe for rendering MCP server icons */
@@ -34,7 +34,7 @@ export const DEFAULT_MCP_CONFIG = {
 	connectionTimeoutMs: 10_000 // 10 seconds for connection establishment
 } as const;
 
-export const MCP_SERVER_ID_PREFIX = 'LlamaUI-MCP-Server';
+export const MCP_SERVER_ID_PREFIX = 'SmileUI-MCP-Server';
 
 export const MCP_RECONNECT_INITIAL_DELAY = 1000;
 export const MCP_RECONNECT_BACKOFF_MULTIPLIER = 2;

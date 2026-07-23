@@ -54,7 +54,7 @@ export const APPLE_ASSETS = {
 export const PWA_MANIFEST = {
 	name: APP_NAME,
 	short_name: APP_NAME,
-	description: 'Local AI chat interface powered by llama.cpp',
+	description: 'Smile UI — local chat interface powered by llama.cpp',
 	start_url: './',
 	display: 'standalone' as const,
 	background_color: THEME_COLORS.BACKGROUND_LIGHT,
@@ -236,7 +236,7 @@ export const PWA_GENERATOR_DEVICES = [
 // src/lib/assets/logo.svg directly) is unaffected.
 export const PWA_ASSET_GENERATOR = {
 	LINK_PRESET: '2023',
-	FAVICON_PADDING: 0.04,
+	FAVICON_PADDING: 0,
 	SPLASH_PADDING: 0.75,
 	FIT_MODE: 'contain',
 	ADD_MEDIA_SCREEN: true,

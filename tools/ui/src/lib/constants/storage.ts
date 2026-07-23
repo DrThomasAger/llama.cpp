@@ -6,7 +6,7 @@
  */
 
 /** Name prefix for all localStorage keys */
-export const STORAGE_APP_NAME = 'LlamaUi';
+export const STORAGE_APP_NAME = 'SmileUI';
 
 /** Deprecated localStorage key prefix (old app name) */
 export const STORAGE_APP_NAME_DEPRECATED = 'LlamaCppWebui';

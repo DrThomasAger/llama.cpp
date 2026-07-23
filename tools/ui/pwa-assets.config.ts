@@ -29,6 +29,14 @@ export default defineConfig({
 			transparent: {
 				...minimal2023Preset.transparent,
 				padding: PWA_ASSET_GENERATOR.FAVICON_PADDING
+			},
+			maskable: {
+				...minimal2023Preset.maskable,
+				padding: 0.1
+			},
+			apple: {
+				...minimal2023Preset.apple,
+				padding: 0.1
 			}
 		},
 		{

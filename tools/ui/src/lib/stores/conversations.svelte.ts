@@ -966,7 +966,7 @@ class ConversationsStore {
 	serializeSessionToJsonl(data: ExportedConversation): string {
 		const { conv, messages } = data;
 
-		const sessionLine = JSON.stringify({ type: 'session', harness: 'llama.app', ...conv });
+		const sessionLine = JSON.stringify({ type: 'session', harness: 'smile.app', ...conv });
 		const messageLines = messages.map((message: DatabaseMessage) => {
 			// `toolCalls` is stored as a JSON string; drop it when empty, otherwise parse it.
 			const { toolCalls, ...rest } = message;

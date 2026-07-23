@@ -312,8 +312,8 @@ export { RouterService } from './router.service';
  * for downgrade compatibility (no rollback needed).
  *
  * **Current Migrations:**
- * 1. **localStorage prefix**: Copy LlamaCppWebui.* → LlamaUi.* (both preserved)
- * 2. **IndexedDB database**: Copy LlamacppWebui → LlamaUi (both preserved)
+ * 1. **localStorage prefix**: Copy LlamaCppWebui.* → SmileUI.* (both preserved)
+ * 2. **IndexedDB database**: Copy LlamacppWebui → SmileUI (both preserved)
  * 3. **Legacy message format**: Marker-based → Structured format
  * 4. **Theme key**: Copy standalone `theme` → config object (both preserved)
  *

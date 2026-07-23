@@ -11,8 +11,8 @@
  * - All migrations are NON-DESTRUCTIVE - legacy data is preserved for downgrade compatibility
  *
  * **Current Migrations:**
- * 1. localStorage prefix: Copy LlamaCppWebui.* → LlamaUi.* (both preserved)
- * 2. IndexedDB database: Copy LlamacppWebui → LlamaUi (both preserved)
+ * 1. localStorage prefix: Copy LlamaCppWebui.* → SmileUI.* (both preserved)
+ * 2. IndexedDB database: Copy LlamacppWebui → SmileUI (both preserved)
  * 3. Legacy message format: Transform in-place (preserves structure, migrates markers)
  * 4. Theme key: Copy standalone `theme` → config object (both preserved)
  */
@@ -112,7 +112,7 @@ const LOCALSTORAGE_MIGRATION_ID = 'localstorage-prefix-v1';
 
 const localStorageMigration: Migration = {
 	id: LOCALSTORAGE_MIGRATION_ID,
-	description: 'Copy localStorage keys from LlamaCppWebui to LlamaUi prefix (non-destructive)',
+	description: 'Copy localStorage keys from LlamaCppWebui to SmileUI prefix (non-destructive)',
 
 	async run(): Promise<void> {
 		// Non-destructive: copy to new key, but KEEP the old key
@@ -145,7 +145,7 @@ const IDXDB_MIGRATION_ID = 'idxdb-database-v1';
 
 const idxdbMigration: Migration = {
 	id: IDXDB_MIGRATION_ID,
-	description: 'Copy IndexedDB from LlamacppWebui to LlamaUi database (non-destructive)',
+	description: 'Copy IndexedDB from LlamacppWebui to SmileUI database (non-destructive)',
 
 	async run(): Promise<void> {
 		const oldDbNames = await Dexie.getDatabaseNames();
