@@ -2,6 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<!-- Smile rig: the engine's own door (8080) is unreceipted; humans
+		     belong at the proxy (8090). Bounce any stray visit there. -->
+		<script>
+			if (location.port === '8080') location.port = '8090';
+		</script>
 		<link rel="icon" href="favicon.ico" sizes="48x48" />
 		<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" />
 
