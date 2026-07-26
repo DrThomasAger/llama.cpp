@@ -326,6 +326,11 @@
 				/>
 			</div>
 
+			<!-- smile-lens branch: the chat being's name -->
+			{#if isExpandedMode}
+				<span class="mr-auto ml-1.5 text-sm font-semibold tracking-tight">Smile Chat!</span>
+			{/if}
+
 			{#if isOnMobile || (isExpandedMode && !alwaysShowOnDesktop)}
 				<div
 					class="flex items-center transition-all duration-150 ease-out {isMobile.current &&

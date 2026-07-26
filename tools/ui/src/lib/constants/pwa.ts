@@ -54,7 +54,7 @@ export const APPLE_ASSETS = {
 export const PWA_MANIFEST = {
 	name: APP_NAME,
 	short_name: APP_NAME,
-	description: 'Smile UI — local chat interface powered by llama.cpp',
+	description: 'Smile Chat — local chat interface powered by llama.cpp',
 	start_url: './',
 	display: 'standalone' as const,
 	background_color: THEME_COLORS.BACKGROUND_LIGHT,

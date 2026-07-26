@@ -283,8 +283,9 @@
 	<Toaster richColors />
 </Tooltip.Provider>
 
-<!-- PWA update prompt + version -->
-<div class="fixed right-4 bottom-4 z-9999 flex flex-col items-end gap-1">
+<!-- PWA update prompt + version (smile-lens: centered, so the bottom
+     right corner stays with the blessing) -->
+<div class="fixed left-1/2 -translate-x-1/2 bottom-4 z-9999 flex flex-col items-center gap-1">
 	{#if showBuildVersion && buildInfoStore.value}
 		<span class="text-[10px] tabular-nums text-muted-foreground">{buildInfoStore.value}</span>
 	{/if}

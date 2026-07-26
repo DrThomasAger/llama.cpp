@@ -185,3 +185,16 @@
 		</div>
 	</div>
 </div>
+
+<!-- smile-lens branch: Guru Rinpoche's blessing - bottom right of the
+     whole page while settings are open, gone with them; a doorway to
+     Hanjo's GitHub -->
+<a
+	href="https://github.com/DrThomasAger"
+	target="_blank"
+	rel="noopener"
+	title="DrThomasAger on GitHub"
+	class="fixed right-4 bottom-4 z-50"
+>
+	<img src="/buddha-eyes.png" alt="The eyes of the Buddha" class="h-[72px] w-[72px] object-contain" />
+</a>
